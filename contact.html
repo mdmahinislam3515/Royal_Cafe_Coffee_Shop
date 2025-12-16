@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Royal Cafe — Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="brand">Royal Cafe</h1>
+      <nav>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="menu.html">Menu</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="order.html">Cart (<span id="cartCount">0</span>)</a>
+        <a class="nav-link" href="login.html">Login</a>
+        <a class="nav-link" href="admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Contact Us</h2>
+    <form id="contactForm" class="card">
+      <label>নাম <input type="text" name="name" required></label>
+      <label>ইমেইল <input type="email" name="email" required></label>
+      <label>মেসেজ <textarea name="message" rows="4" required></textarea></label>
+      <div style="display:flex;gap:8px;align-items:center;margin-top:10px">
+        <button class="btn" type="submit">Send</button>
+        <div id="formStatus" style="color:var(--muted)"></div>
+      </div>
+    </form>
+
+    <h3 style="margin-top:20px">Recent messages</h3>
+    <ul id="messagesList" style="list-style:none;padding:0"></ul>
+  </main>
+
+  <footer class="site-footer">© <span id="year3"></span> MD MAHIN ISLAM</footer>
+
+  <script src="darkmode.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Royal Cafe — Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="brand">Royal Cafe</h1>
+      <nav>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="menu.html">Menu</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="login.html">Login</a>
+        <a class="nav-link" href="admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Your Cart</h2>
+    <div id="cartList" class="card"></div>
+    <div style="margin-top:12px">
+      <button id="checkoutBtn" class="btn">Checkout</button>
+      <button id="clearCart" class="small-btn">Clear</button>
+      <div id="orderStatus" style="color:var(--muted);margin-top:8px"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">© <span id="year7"></span> MD MAHIN ISLAM </footer>
+
+  <script src="darkmode.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

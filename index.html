@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Royal Cafe — Home</title>
+  <meta name="description" content="Royal Cafe — Fresh Coffee, Cozy Place" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader" aria-hidden="false">
+    <div class="logo">Royal Cafe</div>
+    <div class="spinner" role="status" aria-label="Loading"></div>
+    <small>Preparing your cozy experience…</small>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="brand">Royal Cafe</h1>
+      <nav>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="menu.html">Menu</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="order.html">Cart (<span id="cartCount">0</span>)</a>
+        <a class="nav-link" href="login.html">Login</a>
+        <a class="nav-link" href="admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner"></div>
+      <div class="beans" id="beans"></div>
+    </section>
+
+    <section class="container">
+      <h3 class="section-title">Popular picks</h3>
+      <div id="homeGrid" class="grid"></div>
+    </section>
+
+    <section class="container">
+      <h3 class="section-title">Why Royal Cafe?</h3>
+      <div class="features">
+        <div class="feature">Specialty beans</div>
+        <div class="feature">Cozy ambiance</div>
+        <div class="feature">Free Wi-Fi</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">© <span id="year"></span>MD MAHIN ISLAM</footer>
+
+  <script src="particles.js"></script>
+  <script src="darkmode.js"></script>
+  <script src="script.js"></script>
+  <script src="admin.js"></script>
+  
+  
+</body>
+</html>

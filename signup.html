@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Royal Cafe — Signup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="brand">Royal Cafe</h1>
+      <nav>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="menu.html">Menu</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Signup</h2>
+    <form id="signupForm" class="card">
+      <label>Name <input type="text" name="name" required></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>Password <input type="password" name="password" required></label>
+      <div style="display:flex;gap:8px;align-items:center;margin-top:10px">
+        <button class="btn" type="submit">Create account</button>
+        <div id="signupStatus" style="color:var(--muted)"></div>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">© <span id="year6"></span> MD MAHIN ISLAM </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

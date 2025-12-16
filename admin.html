@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin — Royal Cafe</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <main class="admin-wrap">
+    <h1>Admin Dashboard</h1>
+
+    <section class="admin-panel card">
+      <h3>Login (admin)</h3>
+      <form id="adminLoginForm">
+        <label>Password <input type="password" name="password" required></label>
+        <div style="margin-top:8px">
+          <button id="adminLoginBtn" class="btn">Login</button>
+          <div id="adminLoginStatus" style="color:var(--muted)"></div>
+        </div>
+      </form>
+    </section>
+
+    <section id="adminUI" class="admin-ui hidden">
+      <div class="admin-grid">
+        <div class="panel card">
+          <h3>Add Product</h3>
+          <form id="adminAddForm">
+            <input name="name" placeholder="Name" required>
+            <input name="price" placeholder="Price" type="number" required>
+            <input name="img" placeholder="Image URL">
+            <input name="desc" placeholder="Short desc">
+            <div style="margin-top:8px">
+              <button class="btn" type="submit">Add</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="panel card">
+          <h3>Menu items</h3>
+          <table id="adminTable">
+            <thead><tr><th>Name</th><th>Price</th><th></th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <div class="panel card">
+          <h3>Orders</h3>
+          <div id="adminOrders"></div>
+        </div>
+      </div>
+
+      <div style="margin-top:14px">
+        <button id="logoutAdmin" class="small-btn">Logout</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
